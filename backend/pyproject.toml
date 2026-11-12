@@ -1,0 +1,20 @@
+[project]
+name = "paiends-backend"
+version = "0.1.0"
+description = "Paiends API: weekly fitness challenge scoring, ranking and payments"
+readme = "README.md"
+authors = [
+    { name = "Tomas Ortega", email = "tomasorpa@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.5",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+paiends-backend = "paiends_backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
