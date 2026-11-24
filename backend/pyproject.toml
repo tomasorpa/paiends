@@ -8,9 +8,12 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi>=0.162.5",
+    "fastapi[standard]>=0.162.5",
     "uvicorn>=0.54.0",
 ]
+
+[tool.fastapi]
+entrypoint="paiends_backend.main:app"
 
 [project.scripts]
 paiends-backend = "paiends_backend:main"
